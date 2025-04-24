@@ -1,0 +1,163 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.wrapper {
+  margin-left: 5px;
+  width: 98%;
+  max-width: 500px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.left-navbar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  gap: 5px;
+}
+.yt-img {
+  height: 100%;
+  width: 100%;
+}
+.music {
+  margin-top: 6px;
+  color: white;
+  font-size: 1.2rem;
+}
+.gmail-logo {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-top: -3px;
+}
+.rignt-navbar {
+  margin-right: 16px;
+  display: flex;
+  gap: 23px;
+  margin-top: 9px;
+  color: white;
+}
+.mood-btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: scroll;
+}
+.mood-btn button {
+  background-color: rgb(27, 20, 20);
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+}
+.below-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.quick-picks {
+  color: white;
+}
+.play-all {
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0px 0px 5px 2px rgb(27, 20, 20);
+  background-color: black;
+  padding: 5px 10px;
+  border: none;
+  font-size: 0.8rem;
+}
+.seto {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 100px;
+  width: 30px;
+  background-color: white;
+  opacity: 0.1;
+  filter: blur(25px);
+}
+.content-wrapper {
+  width: 90%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.content:hover {
+  transform: translateY(-5px);
+}
+.song-title {
+  text-transform: capitalize;
+}
+.song-img {
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+}
+.favourite {
+  margin-top: 20px;
+}
+.favourite-img {
+  height: 100%;
+  width: 100%;
+}
+.Forgotten-favourite {
+  font-size: 1.3rem;
+}
+.song-banner {
+  width: 200px;
+}
+.favorite-song-wrapper {
+  display: flex;
+  gap: 5px;
+  overflow-x: scroll;
+}
+.favourite-title {
+  text-transform: capitalize;
+}
+.song-artist {
+  font-size: 0.7rem;
+  color: gray;
+}
+.favourite-song-list {
+  align-items: center;
+  display: flex;
+  width: min(80%, 700px);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.favourite-song-list:hover {
+  transform: translateY(-5px);
+}
