@@ -8,13 +8,12 @@ const musics = [
   "AUR-TU-HAI-KAHAN.mp3",
   "Lost-Sky",
 ];
-console.log(...musicDivs);
-
 musicDivs.forEach((div, index) => {
-  const id = index;
   div.addEventListener("click", () => {
-    const path = `./assets/music/${musics[id]}.mp3`;
+    const path = `./assets/music/${musics[index]}.mp3`;
     musicPlayer.src = path;
+    if (index == 1) musicPlayer.currentTime = 20;
     musicPlayer.play();
+    musicPlayer.style.display = "block";
   });
 });
