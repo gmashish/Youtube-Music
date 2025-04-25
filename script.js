@@ -17,3 +17,18 @@ musicDivs.forEach((div, index) => {
     musicPlayer.style.display = "block";
   });
 });
+const favdivs = document.querySelectorAll(".favourite-song-list");
+const favmusics = [
+  "Lost-Sky",
+  "AUR-TU-HAI-KAHAN",
+  "Dusman-hereko-herai",
+  "kera-ke-thapo",
+  "ap-dillon",
+];
+favdivs.forEach((fav, index) => {
+  fav.addEventListener("click", () => {
+    musicPlayer.src = "./assets/music/" + favmusics[index] + ".mp3";
+    musicPlayer.play();
+    musicPlayer.style.display = "block";
+  });
+});

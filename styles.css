@@ -6,6 +6,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 body {
   width: 100vw;
@@ -15,7 +17,6 @@ body {
   display: flex;
   justify-content: center;
   overflow-x: hidden;
-
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -29,32 +30,38 @@ body {
   justify-content: space-between;
 }
 .left-navbar {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   display: flex;
   gap: 5px;
+  margin-top: 10px;
+  
 }
 .yt-img {
   height: 100%;
   width: 100%;
+  
 }
 .music {
   margin-top: 6px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 .gmail-logo {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
-  margin-top: -3px;
+
+}
+.icon{
+  scale: 1.2;
 }
 .rignt-navbar {
   margin-right: 16px;
   display: flex;
-  gap: 23px;
-  margin-top: 9px;
+  align-items: center;
+  gap: 30px;
   color: white;
 }
 .mood-btn {
@@ -124,7 +131,7 @@ body {
 .song-img {
   width: 50px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .favourite {
   margin-top: 20px;
@@ -169,4 +176,52 @@ body {
   transform: translateX(-50%);
   display: none;
   z-index: 1;
+}
+.logo-name{
+  margin-top: 30px;
+  display: flex;
+}
+.gmail-pic{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.rebirth-ff{
+  font-size: 0.8rem;
+  color: gray;
+}
+.Speed-dial{
+  font-size: 1.5rem;
+}
+.gmail-speed{
+ margin-left: 10px;
+ margin-top: -4px;
+ padding: 3px;
+}
+.song-container{
+display: flex;
+flex-direction: column;
+}
+.songs-images{
+  height: 120px;
+  width: 125px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  box-shadow: 0 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.songs-titles{
+  font-size: 0.9rem;
+  margin-top: -25px;
+  margin-left: 5px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 1.5);
+}
+.first-row{
+  display: flex;
+  margin-top: -30px;
+}
+.second-row{
+  display: flex;
+  margin-top: -35px;
+
 }
