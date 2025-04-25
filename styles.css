@@ -11,7 +11,7 @@
 }
 body {
   width: 100vw;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: poppins,Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
   display: flex;
@@ -19,11 +19,13 @@ body {
   overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  padding-bottom: 60px;
 }
 .wrapper {
   margin-left: 5px;
   width: 98%;
   max-width: 500px;
+  position: relative;
 }
 .navbar {
   display: flex;
@@ -36,12 +38,10 @@ body {
   display: flex;
   gap: 5px;
   margin-top: 10px;
-  
 }
 .yt-img {
   height: 100%;
   width: 100%;
-  
 }
 .music {
   margin-top: 6px;
@@ -52,10 +52,6 @@ body {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-
-}
-.icon{
-  scale: 1.2;
 }
 .rignt-navbar {
   margin-right: 16px;
@@ -170,58 +166,88 @@ body {
 }
 
 .music-player {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   display: none;
   z-index: 1;
+  opacity: 0.75;
 }
-.logo-name{
+.logo-name {
   margin-top: 30px;
   display: flex;
 }
-.gmail-pic{
+.gmail-pic {
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-.rebirth-ff{
+.rebirth-ff {
   font-size: 0.8rem;
   color: gray;
 }
-.Speed-dial{
+.Speed-dial {
   font-size: 1.5rem;
 }
-.gmail-speed{
- margin-left: 10px;
- margin-top: -4px;
- padding: 3px;
+.gmail-speed {
+  margin-left: 10px;
+  margin-top: -4px;
+  padding: 3px;
 }
-.song-container{
-display: flex;
-flex-direction: column;
+.song-container {
+  display: flex;
+  flex-direction: column;
 }
-.songs-images{
+.songs-images {
   height: 120px;
   width: 125px;
   margin-top: 40px;
-  border-radius: 5px;
-  border: 1px solid gray;
-  box-shadow: 0 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  object-fit: fill;
 }
-.songs-titles{
+.songs-titles {
+  font-weight: bold;
   font-size: 0.9rem;
   margin-top: -25px;
   margin-left: 5px;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 1.5);
 }
-.first-row{
+.first-row {
   display: flex;
   margin-top: -30px;
 }
-.second-row{
+.second-row {
   display: flex;
   margin-top: -35px;
-
+}
+.first-row,
+.second-row {
+  gap: 3px;
+}
+.bottom-wrapper {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+  padding: 10px 20px;
+  max-width: 500px;
+  border-top: 1px solid white;
+}
+.bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.bottom i {
+  font-size: 1.5rem;
+}
+.bottom-text {
+  font-size: 0.75rem;
+  font-weight: 100;
 }

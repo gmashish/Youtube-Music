@@ -1,3 +1,16 @@
+document.addEventListener("click", () => {
+  const elem = document.documentElement;
+
+  if (!document.fullscreenElement) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { // Safari
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { // IE11
+      elem.msRequestFullscreen();}
+}
+});
+
 const musicPlayer = document.getElementById("music-player");
 const musicDivs = document.querySelectorAll(".content");
 const musics = [
